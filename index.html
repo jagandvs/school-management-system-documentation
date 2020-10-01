@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>School Management System Documentation</title>
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome JS -->
+    <script
+      src="https://kit.fontawesome.com/fd2a42c795.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="page-wrapper school-theme toggled live-search-list">
+      <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+        <i class="fas fa-bars"></i>
+      </a>
+      <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+          <div class="sidebar-brand">
+            <a href="#">DOCUMANTATION</a>
+            <div id="close-sidebar">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+
+          <!-- sidebar-header  -->
+          <div class="sidebar-search">
+            <div>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control search-menu live-search-box"
+                  placeholder="Search..."
+                />
+                <div class="input-group-append">
+                  <span class="input-group-text">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- sidebar-search  -->
+          <div class="sidebar-menu">
+            <ul>
+              <!-- item -->
+              <li class="on-click current" data-tab="tab-1">
+                <a href="#" class="">
+                  <i class="fas fa-home"></i>
+                  <span>Home</span>
+                </a>
+              </li>
+              <!-- item -->
+              <li class="on-click" data-tab="wlsm-plugin-installation">
+                <a href="#">
+                  <i class="fab fa-stack-exchange"></i>
+                  <span>Description</span>
+                </a>
+              </li>
+              <!-- item -->
+              <li class="on-click" data-tab="wlsm-plugin-features">
+                <a href="#">
+                  <i class="fas fa-layer-group"></i>
+                  <span>Features</span>
+                </a>
+              </li>
+
+              <!-- item -->
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="fas fa-school"></i>
+                  <span>School Admin</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-school-settings">
+                      <a href="#">
+                        <span>School Settings</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-create-roles">
+                      <a href="#">
+                        <span>Create Roles</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li
+                      class="on-click"
+                      data-tab="wlsm-showing-inquiry-form-on-a-page"
+                    >
+                      <a href="#">
+                        <span>Showing Inquiry Form on a Page</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-inquiries-management">
+                      <a href="#">
+                        <span>Inquiries Management</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="fas fa-users-cog"></i>
+                  <span>Students & Acadmic</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-add-class-sections">
+                      <a href="#">
+                        <span>Add Class Sections</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-add-new-admissions">
+                      <a href="#">
+                        <span>Add New Admissions</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-manage-students">
+                      <a href="#">
+                        <span>Manage Students</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-student-promotion">
+                      <a href="#">
+                        <span>Student Promotion</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-student-transfer">
+                      <a href="#">
+                        <span>Student Transfer</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-student-attendance">
+                      <a href="#">
+                        <span>Student Attendance</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-add-subjects">
+                      <a href="#">
+                        <span>Add Subjects</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-add-study-materials">
+                      <a href="#">
+                        <span>Add Study Materials</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-assign-homework">
+                      <a href="#">
+                        <span>Assign Homework</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li
+                      class="on-click"
+                      data-tab="wlsm-distribute-certificates"
+                    >
+                      <a href="#">
+                        <span>Distribute Certificates</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-student-login-widget">
+                      <a href="#">
+                        <span>Student Login Widget</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li
+                      class="on-click"
+                      data-tab="wlsm-showing-student-login-form-on-a-page"
+                    >
+                      <a href="#">
+                        <span>Showing Student Login Form on a Page</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-student-dashboard">
+                      <a href="#">
+                        <span>Student Dashboard</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li
+                      class="on-click"
+                      data-tab="wlsm-showing-exam-time-table-on-a-page"
+                    >
+                      <a href="#">
+                        <span>Showing Exam Time Table on a Page</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li
+                      class="on-click"
+                      data-tab="wlsm-add-noticeboard-and-widget"
+                    >
+                      <a href="#">
+                        <span>Add Noticeboard and Widget</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-print-view">
+                      <a href="#">
+                        <span>Print View</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="fas fa-file-invoice-dollar"></i>
+                  <span>Accounting</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-generate-fee-invoices">
+                      <a href="#">
+                        <span>Generate Fee Invoices</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-expense-management">
+                      <a href="#">
+                        <span>Expense Management</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-income-management">
+                      <a href="#">
+                        <span>Income Management</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li
+                      class="on-click"
+                      data-tab="wlsm-collect-payment-offline-and-online"
+                    >
+                      <a href="#">
+                        <span>Collect Payment Offline and Online</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="fas fa-id-card"></i>
+                  <span>Examination</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <!-- item -->
+                    <li
+                      class="on-click"
+                      data-tab="wlsm-exam-management-and-admit-cards-generation"
+                    >
+                      <a href="#">
+                        <span>Exam Management and Admit Cards Generation</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-exam-results">
+                      <a href="#">
+                        <span>Manage Exam Results</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li
+                      class="on-click"
+                      data-tab="wlsm-exam-results-assessment"
+                    >
+                      <a href="#">
+                        <span>Exam Results Assessment</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="fas fa-book"></i>
+                  <span>Library</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-add-books">
+                      <a href="#">
+                        <span>Add Books</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-library-cards">
+                      <a href="#">
+                        <span>Library Cards</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-issue-books">
+                      <a href="#">
+                        <span>Issue Books</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="fas fa-bus-alt"></i>
+                  <span>Transport</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-add-vehicles">
+                      <a href="#">
+                        <span>Add Vehicles</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-add-routes">
+                      <a href="#">
+                        <span>Add Routes</span>
+                      </a>
+                    </li>
+                    <!-- item -->
+                    <li class="on-click" data-tab="wlsm-transport-report">
+                      <a href="#">
+                        <span>Students Transport Report</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- item -->
+              <li class="on-click" data-tab="wlsm-help-and-support">
+                <a href="#">
+                  <i class="fas fa-headset"></i>
+                  <span>Help and Support</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- sidebar-menu  -->
+        </div>
+      </nav>
+      <!-- sidebar-wrapper  -->
+      <main class="page-content current" id="tab-1">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-12">
+              <div class="intro-main">
+                <h1 class="title"><span>School</span>Management System</h1>
+                <h4>
+                  <em
+                    >The only software to manage the day to day School
+                    Operations.</em
+                  >
+                </h4>
+                <p>
+                  <strong>Email:</strong
+                  ><a href="mailto:schoolinfo@mysticst.com">
+                    schoolinfo@mysticst.com</a
+                  >
+                </p>
+                <p>
+                  <strong>Website:</strong
+                  ><a href="https://mysticst.com/school-management-system">
+                    School Management System (Mystic Software Technologies)</a
+                  >
+                </p>
+                <h3 class="diss">
+                  Beautifully Designed and Centralized the School Processes and
+                  Improves the visibility of all Functions and Best User
+                  Experience.
+                </h3>
+                <div class="btn-grp">
+                  <a
+                    target="_blank"
+                    href="http://mysticst.com/school-management/"
+                    class="btn-1"
+                    ><i class="fas fa-desktop"></i> View Demo</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://mysticst.com/contact/"
+                    class="btn-2"
+                    ><i class="fas fa-file-invoice-dollar"></i> Get Quote</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="page-content" id="wlsm-plugin-installation">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+
+          <div class="row align-items-center">
+            <div class="col-lg-12">
+              <div class="head-listing">
+                <h3>Description</h3>
+                <p style="text-align: justify; line-height: 2em">
+                  <strong> School Management System Software</strong> is to
+                  manage entities such as classes, sections, students,
+                  attendance, exams, ID cards, admit cards, teachers, staff,
+                  fees, invoices, income, expense, noticeboard, study materials
+                  and much more. It supports payment methods such as Stripe,
+                  Razorpay, Pesapal, Paystack or PayPal. It also includes SMS
+                  notifications through SMS providers which include Nexmo,
+                  MsgClub, Msg91, Twilio, SMS Striker, Textlocal, EBulkSMS etc.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-plugin-features">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Features</h3>
+                <!-- item -->
+                <!-- <div class="sub-listing">
+                  <h4 class="s-title">Multi-School Management :-</h4>
+                  <p>
+                    Add multiple schools, assign admins and classes to each
+                    school to manage individual school.
+                  </p>
+                </div> -->
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">Session Management :-</h4>
+                  <p>
+                    Create new session and keep all the records of previous
+                    sessions.
+                  </p>
+                </div>
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">Manage Classes and Sections :-</h4>
+                  <p>
+                    Administrators can create classes and assign them to
+                    schools. With each class, there can be multiple class
+                    sections.
+                  </p>
+                </div>
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">Student Management :-</h4>
+                  <p>
+                    School admins and staff with neccessary permissions can new
+                    admissions to school by assigning them admission number,
+                    class, section and roll number. Also, for each student
+                    record in a session, a new enrollment number is generated
+                    automatically.
+                  </p>
+                </div>
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">Inquiries Management :-</h4>
+                  <p>
+                    Display inquiry form for a school in a page using shortcode.
+                    Also, receive inquiries school-wise, add next follow up date
+                    and notes for the inquiry.
+                  </p>
+                </div>
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">Student Promotion :-</h4>
+                  <p>
+                    Promote students to a new class for a new session. This
+                    creates a new enrollment of a student for the next session.
+                  </p>
+                </div>
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">Student Transfer :-</h4>
+                  <p>
+                    Transfer student from one school to another. This also keep
+                    track of students transferred to and transferred from the
+                    school.
+                  </p>
+                </div>
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">Student Attendance :-</h4>
+                  <p>
+                    Take daily attendance of students. Print attendance sheet of
+                    a class. Also, students can view their attendance report in
+                    dashboard.
+                  </p>
+                </div>
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">Student Dashboard :-</h4>
+                  <p>
+                    Students view their fees report, admission details, ID card
+                    etc. and pay remaining fees using suitable payment method.
+                  </p>
+                </div>
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">Roles and Permissions :-</h4>
+                  <p>
+                    Create custom roles like teacher, accountant and assign them
+                    neccessary permissions as per the role so they are
+                    restricted to the management of school entities assigned to
+                    them.
+                  </p>
+                </div>
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">Assign School Admins and Staff :-</h4>
+                  <p>
+                    Multi-School admins assign an administrator to a school.
+                    School administrator can create any number of staff with
+                    roles to manage the school.
+                  </p>
+                </div>
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">Noticeboard Widget :-</h4>
+                  <p>
+                    It has noticeboard widget which displays notices to the
+                    widget section of your website. Here, you can change the
+                    number of notices, widget height and width to incorporate
+                    the design of your website.
+                  </p>
+                </div>
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">Distribute Study Materials :-</h4>
+                  <p>
+                    School staff with neccessary permission can add study
+                    materials of classes. These study materials will show up on
+                    student dashboard section, allowing them to download and
+                    view the study materials.
+                  </p>
+                </div>
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">
+                    Automatic Notifications via Email, SMS and Custom Templates
+                    :-
+                  </h4>
+                  <p>
+                    Send SMS and email notifications to students at the time of
+                    new admissions, fee invoice generation, payment receipts
+                    generation etc. SMS providers include Nexmo, Twilio,
+                    MsgClub, SMS Striker, Textlocal and more.
+                  </p>
+                </div>
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">Exams Management :-</h4>
+                  <p>
+                    Create exam, add exam papers, exam center, timings, date and
+                    room number for single class or multiple classes.
+                  </p>
+                </div>
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">Publish Exam Time Table :-</h4>
+                  <p>
+                    Option to publish exam time table which will show up on
+                    student dashboard or you can use the shortcode to display
+                    exam time table on a particular page of your website.
+                  </p>
+                </div>
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">Generate Admit Cards :-</h4>
+                  <p>
+                    For each exam, generate admit cards for students. Also,
+                    publish the admit cards which students can download from
+                    student dashboard section.
+                  </p>
+                </div>
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">Accounting Management :-</h4>
+                  <p>
+                    This include fee invoice generation, fee payment collection,
+                    income management and expense management.
+                  </p>
+                </div>
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">Generate Fee Invoices :-</h4>
+                  <p>
+                    Select students from classes and generate fees invoices in
+                    bulk or for single student. This also supports partial
+                    payment collection or one time payment collection.
+                  </p>
+                </div>
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">Fees Collection Form :-</h4>
+                  <p>
+                    Display fees collection form on a page using shortcode which
+                    allows students to search their names and view pending fee
+                    invoices. Students can pay their fees by using a payment
+                    method.
+                  </p>
+                </div>
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">
+                    Payments via Stripe, Razorpay, Pesapal, Paystack or PayPal
+                    :-
+                  </h4>
+                  <p>
+                    Fee payment can be done by using Stripe, Razorpay, Pesapal,
+                    Paystack or PayPal payment gateway.
+                  </p>
+                </div>
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">
+                    Print Fees Invoice and Payment Receipt :-
+                  </h4>
+                  <p>
+                    After adding a fee invoice, it supports printing of fee
+                    invoices. Also, after making a payment, students or staff
+                    can print the payment receipt.
+                  </p>
+                </div>
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">Manage Expense and Income :-</h4>
+                  <p>
+                    Add expense categories and income categories. Add expense
+                    and icome date wise for a school.
+                  </p>
+                </div>
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">Library Management :-</h4>
+                  <p>
+                    Manage library books, generate and print student library
+                    cards, issue books to students and keep track of books
+                    issued and books return.
+                  </p>
+                </div>
+                <!-- item -->
+                <div class="sub-listing">
+                  <h4 class="s-title">Student Dashboard :-</h4>
+                  <p>
+                    In student dashboard, students can view noticeboard, print
+                    their ID cards, view pending fee invoices, make payments and
+                    view their payment history. Also, they can download study
+                    materials, exam time table, admit cards and much more.
+                  </p>
+                </div>
+                <!-- item -->
+                <!-- <div class="sub-listing">
+                  <h4 class="s-title">Student Login Widget and Shortcode :-</h4>
+                  <p>
+                    Student login form can be display on page via shortcode and
+                    also you can place login widget on your website.
+                  </p>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-school-settings">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>School Settings</h3>
+              </div>
+              <div class="mun-listing">
+                <p>1). Go to "Settings" under "SM School".</p>
+                <p>
+                  2). Here, you can setup school related settings like SMS
+                  templates, SMS providers and email templates and payment
+                  methods etc.
+                </p>
+                <img
+                  src="images/school-sms-settings.jpg"
+                  alt="assign-classes"
+                />
+                <img
+                  src="images/school-payment-settings.jpg"
+                  alt="School Payment Settings"
+                />
+                <p>
+                  3). There are also a number of shortcodes which you can use to
+                  show different forms and entities on your website. This
+                  includes fees submission form, school noticeboard, class time
+                  table, exam time table, admit cards, exam results, certificate
+                  form etc.
+                </p>
+                <img
+                  src="images/school-shortcodes.jpg"
+                  alt="School Shortcodes"
+                />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-create-roles">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Create Roles</h3>
+              </div>
+              <div class="mun-listing">
+                <p>1). Go to "Roles" under "SM Administrator".</p>
+                <p>2). Click on "Add New Role".</p>
+                <p>
+                  3). Here, you can specify the role name and assign permissions
+                  to this role.
+                </p>
+                <img src="images/create-roles.jpg" alt="Create Roles" />
+                <hr />
+                <img src="images/add-new-role.jpg" alt="Add New Role" />
+                <hr />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-add-class-sections">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Add Class Sections</h3>
+                <p>1). Go to "Class Sections" under "SM Academic".</p>
+                <p>
+                  3). Here, you can click on number of section and add new
+                  section for the class or change the default section.
+                </p>
+                <img
+                  src="images/add-class-sections.jpg"
+                  alt="Add Class Sections"
+                />
+                <hr />
+                <img
+                  src="images/add-class-section.jpg"
+                  alt="Add Class Section"
+                />
+                <hr />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-add-new-admissions">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Add New Admissions</h3>
+                <p>1). Go to "Admission" under "SM Student".</p>
+                <p>2). Here, you can add a new admission of a student.</p>
+                <p>
+                  3). You need to provide admission number, date, class, section
+                  and roll number of a student. For each new admission of a
+                  session, a new enrollment number is generated.
+                </p>
+                <p>
+                  4). You can also provide login details for this student which
+                  the student can use to login to the student dashboard on a
+                  page of your website.
+                </p>
+                <img
+                  src="images/add-new-admissions.jpg"
+                  alt="Add New Admissions"
+                />
+                <hr />
+                <img src="images/student-login.jpg" alt="Add New Admissions" />
+                <hr />
+                <p>
+                  4). You can also import students from CSV file. For this click
+                  on "Bulk Admission", select class and section, then click on
+                  "Export Sample CSV". Fill student details in the file, choose
+                  the CSV file with student details and click "Bulk Import".
+                </p>
+                <img src="images/bulk-admission.jpg" alt="Bulk Admission" />
+                <hr />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-manage-students">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Manage Students</h3>
+                <p>1). Go to "Students" under "SM Student".</p>
+                <p>
+                  2). Here, you can manage the students, edit their profile.
+                </p>
+                <p>
+                  3). Also, you can search and filter the students class wise,
+                  section wise and by keyword.
+                </p>
+                <img src="images/manage-students.jpg" alt="Manage Students" />
+                <hr />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-student-promotion">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Student Promotion</h3>
+                <p>1). Go to "Promote" under "SM Student".</p>
+                <p>
+                  2). Here, you can promote a class students to new class and
+                  new session.
+                </p>
+                <p>
+                  3). To promote a student, select class to promote and next
+                  class, then click "Manage Promotion". map class sections.
+                </p>
+                <p>
+                  4). Next, map the class sections from old class to new class.
+                </p>
+                <p>5). Click "Promote Student" and confirm.</p>
+                <img
+                  src="images/student-promotion.jpg"
+                  alt="Student Promotion"
+                />
+                <hr />
+                <img src="images/manage-promotion.jpg" alt="Manage Promotion" />
+                <hr />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-student-transfer">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Student Transfer</h3>
+                <p>1). Go to "Transfer Student" under "SM Student".</p>
+                <p>
+                  2). Here, you can find students transferred to other schools
+                  and students transferred to this school.
+                </p>
+                <p>
+                  3). To tranfer student to other school. Click on "Transfer
+                  Student", select next school, class and confirm the transfer.
+                </p>
+                <img src="images/student-transfer.jpg" alt="Transfer Student" />
+                <hr />
+                <img src="images/new-transfer.jpg" alt="New Transfer" />
+                <hr />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-student-attendance">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Student Attendance</h3>
+                <p>1). Go to "Attendance" under "SM Academic".</p>
+                <p>2). Here, you can take daily attendance of a class.</p>
+                <p>
+                  3). Also, you can generate a printable attendance sheet for
+                  the class.
+                </p>
+                <img
+                  src="images/take-student-attendance.jpg"
+                  alt="Student Attendance"
+                />
+                <hr />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-generate-fee-invoices">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Generate Fee Invoices</h3>
+                <p>1). Go to "Fee Invoices" under "SM Accounting".</p>
+                <p>
+                  2). Here, you can either generate a single invoice or bulk
+                  invoices. Also, you can specify if you want to allow partial
+                  payments for the invoice.
+                </p>
+                <p>
+                  3). If you are generating a single invoice, you can collect
+                  payment for that invoice at the same step.
+                </p>
+                <p>
+                  4). After generating the invoice, staff can print the invoice.
+                  Also, students can view their pending invoices in student
+                  dashboard and pay their fees.
+                </p>
+                <img
+                  src="images/generate-fee-invoices.jpg"
+                  alt="Generate Fee Invoices"
+                />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-expense-management">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Expense Management</h3>
+                <p>1). Go to "Expenses" under "SM Accounting".</p>
+                <p>2). Here, you can add expense and manage expenses.</p>
+                <p>
+                  3). Also, you can group the expenses by category. For this,
+                  you need to create expense categories.
+                </p>
+                <img
+                  src="images/add-expense-management.jpg"
+                  alt="Expense Management"
+                />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-income-management">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Income Management</h3>
+                <p>1). Go to "Income" under "SM Accounting".</p>
+                <p>2). Here, you can add income and manage income.</p>
+                <p>
+                  3). Similiar to expense, you can group the income by category.
+                  For this, you need to create income categories.
+                </p>
+                <img
+                  src="images/income-management.jpg"
+                  alt="Income Management"
+                />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-collect-payment-offline-and-online">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Collect Payment Offline and Online</h3>
+                <p>
+                  1). When you genreate invoice, you can later collect payments
+                  for this invoice.
+                </p>
+                <p>
+                  2). You can specify payment method used and provide
+                  transaction ID for adding offline payment.
+                </p>
+                <p>
+                  3). Students can also pay their fees by using online payment
+                  like Stripe, Razorpay, PayPal etc.
+                </p>
+                <img
+                  src="images/collect-payment-offline-and-online.jpg"
+                  alt="Collect Payment Offline and Online"
+                />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-add-noticeboard-and-widget">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Add Noticeboard and Widget</h3>
+                <p>1). Go to "Noticeboard" under "SM Academic".</p>
+                <p>
+                  2). Here, you can add notices which will appear on the
+                  noticeboard of a school.
+                </p>
+                <p>
+                  3). To display school noticeboard widget, Go to "Widgets"
+                  under "Appearance".
+                </p>
+                <p>4). Select school, specify number of notices and save.</p>
+                <img
+                  src="images/add-noticeboard.jpg"
+                  alt="Add Noticeboard and Widget"
+                />
+                <hr />
+                <img
+                  src="images/add-noticeboard-widget.jpg"
+                  alt="Add Noticeboard and Widget"
+                />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-add-subjects">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Add Subjects</h3>
+                <p>1). Go to "Subjects" under "SM Academic".</p>
+                <p>
+                  2). Here, you can add class subjects, their subject code etc.
+                </p>
+                <img src="images/add-subjects.jpg" alt="Add Subjects" />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-add-study-materials">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Add Study Materials</h3>
+                <p>1). Go to "Study Materials" under "SM Academic".</p>
+                <p>2). Here, you can add study materials and class notes.</p>
+                <p>
+                  3). Also, you need to select the classes for which these study
+                  materials need to be available.
+                </p>
+                <p>
+                  4). Students belong to these classes will be able to view and
+                  download these study materials from dashboard.
+                </p>
+                <img
+                  src="images/add-study-materials.jpg"
+                  alt="Add Study Materials"
+                />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-assign-homework">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Assinging Homework to Students</h3>
+                <p>1). Go to "Home Work" under "SM Academic".</p>
+                <p>
+                  2). Here, you can assign home work to students of class in
+                  sections.
+                </p>
+                <p>
+                  3). Also, you can send SMS to student or parent at the same
+                  time.
+                </p>
+                <p>
+                  4). This homework will also be visible in student dashboard.
+                </p>
+                <img src="images/view-homework.jpg" alt="Home works" />
+                <hr />
+                <img src="images/add-homework.jpg" alt="Add Home work" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="page-content"
+        id="wlsm-exam-management-and-admit-cards-generation"
+      >
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Exam Management and Admit Cards Generation</h3>
+                <p>1). Go to "Exams" under "SM Examination".</p>
+                <p>
+                  2). Here, you can add exam, exam center, exam papers and
+                  timings, grade criteria, exam date and room numbers.
+                </p>
+                <p>
+                  3). Using these information, the exam time table is generated
+                  which you can publish.
+                </p>
+                <p>
+                  4). You can also generate and publish admit cards for
+                  students. When generating admit cards, you need to create
+                  series of roll numbers for exam. You can also specify roll
+                  number prefix.
+                </p>
+                <p>
+                  5). Students can download their admit cards from dashboard.
+                </p>
+                <img src="images/exam-management.jpg" alt="Exam Management" />
+                <hr />
+                <img
+                  src="images/admit-cards-generation.jpg"
+                  alt="Admit Cards Generation"
+                />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-exam-results">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Manage Exam Results</h3>
+                <p>1). Go to "Exam Results" under "SM Examination".</p>
+                <p>2). Here, you can add and view exam results.</p>
+                <img src="images/exam-results.jpg" alt="Exam Results" />
+                <hr />
+                <img src="images/add-exam-results.jpg" alt="Add Exam Results" />
+                <p>
+                  3). Select student, fill obtained marks for each subject and
+                  click "Add Exam Results".
+                </p>
+                <p>
+                  4). Students can view exam results once the exam results have
+                  been published.
+                </p>
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-exam-results-assessment">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Exam Results Assessment</h3>
+                <p>1). Go to "Results Assessment" under "SM Examination".</p>
+                <p>
+                  2). Here, you can view overall results assessment of a
+                  student.
+                </p>
+                <img
+                  src="images/exam-results-assessment.jpg"
+                  alt="Exam Results Assessment"
+                />
+                <hr />
+                <p>
+                  3). Select class, section, then click "Get Exam Results
+                  Assessment".
+                </p>
+                <p>4). Then, you print out results assessment of a student.</p>
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-add-books">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Books Management</h3>
+                <p>1). Go to "All Books" under "SM Library".</p>
+                <p>2). Here, you can add and manage library books.</p>
+                <img src="images/all-books.jpg" alt="All Books" />
+                <hr />
+                <p>
+                  3). To add a new book, click on "Add New Book" and fill the
+                  title, author, ISBN etc.
+                </p>
+                <img src="images/add-book.jpg" alt="Add Book" />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-library-cards">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Library Cards</h3>
+                <p>1). Go to "Library Cards" under "SM Library".</p>
+                <p>2). Here, you can issue library cards.</p>
+                <img src="images/library-cards.jpg" alt="Library Cards" />
+                <hr />
+                <img
+                  src="images/issue-library-cards.jpg"
+                  alt="Issue Library Cards"
+                />
+                <hr />
+                <p>
+                  3). To issue library cards, specify card number prefix, enter
+                  starting card number, select class, section and issued date,
+                  then click "Manage Library Cards". Select students and then
+                  click on "Issue Library Cards".
+                </p>
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-issue-books">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3 id="wlsm-issue-books">Issue Books</h3>
+                <p>1). Go to "Books Issued" under "SM Library".</p>
+                <p>
+                  2). Here, you can view all the books issued to the students.
+                </p>
+                <img src="images/books-issued.jpg" alt="Books Issued" />
+                <hr />
+                <img src="images/issue-books.jpg" alt="Issue Books" />
+                <hr />
+                <img src="images/issue-book.jpg" alt="Issue Book" />
+                <hr />
+                <p>
+                  3). To issue a new book, click on "Issue Book", select class,
+                  section, student, book quantity, date of issue and return.
+                </p>
+                <p>4). Here, you can also check for student library card.</p>
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-add-vehicles">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Transport Vehicles</h3>
+                <p>1). Go to "Vehicles" under "SM Transport".</p>
+                <p>2). Here, you can view all the vehicles for transport.</p>
+                <img src="images/view-vehicles.jpg" alt="View Vehicles" />
+                <hr />
+                <img src="images/add-vehicle.jpg" alt="Add Vehicle" />
+                <hr />
+                <p>
+                  3). To add a new vehicle, click on "Add New Vehicle" and
+                  specify vehicle number, model, driver name, driver phone.
+                </p>
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-add-routes">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Transport Routes</h3>
+                <p>1). Go to "Routes" under "SM Transport".</p>
+                <p>2). Here, you can view all the transport routes.</p>
+                <img src="images/view-routes.jpg" alt="View Routes" />
+                <hr />
+                <img src="images/add-route.jpg" alt="Add Route" />
+                <hr />
+                <p>
+                  3). To add a new routes, click on "Add New Routes" and specify
+                  route name, route fare and select vehicles available in this
+                  route.
+                </p>
+                <hr />
+                <p>
+                  4). You can assign transport vehicle and route to students at
+                  the time of admission or by editing the student record.
+                </p>
+                <hr />
+                <img
+                  src="images/student-transport-vehicle.jpg"
+                  alt="Student Transport Vehicle"
+                />
+                <hr />
+                <img
+                  src="images/student-transport-routes.jpg"
+                  alt="Student Transport Routes"
+                />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-transport-report">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Students Transport Report</h3>
+                <p>
+                  Select class, section, transport route and/or vehicle to get
+                  the students transport report.
+                </p>
+                <img
+                  src="images/students-transport-report.jpg"
+                  alt="Students Transport Report"
+                />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-distribute-certificates">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Distribute Certificates</h3>
+                <p>1). Go to "Certificates" under "SM Student".</p>
+                <p>2). Here, you can design and distribute certificates.</p>
+                <p>
+                  3). To add and design a new certificate. Click on "Add New
+                  Certificate".
+                </p>
+                <img
+                  src="images/add-new-certificate.jpg"
+                  alt="Add New Certificate"
+                />
+                <hr />
+                <p>
+                  4). You can upload your own certificate background image and
+                  set positions for various fields like name, session, class,
+                  section, roll number, enrollment number, session start date,
+                  session end date etc.
+                </p>
+                <img
+                  src="images/design-certificate.jpg"
+                  alt="Design Certificate"
+                />
+                <hr />
+                <p>
+                  5). After you design the certificate, you can distribute it to
+                  the students. For this, click on "Distribute Certificate" and
+                  select class, students and date issued.
+                </p>
+                <img
+                  src="images/distribute-certificate.jpg"
+                  alt="Distribute Certificate"
+                />
+                <hr />
+                <img
+                  src="images/distribute-certificate-to-students.jpg"
+                  alt="Distribute Certificate to Students"
+                />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-student-login-widget">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Student Login Widget</h3>
+                <p>1). Go to "Widgets" under "Appearance".</p>
+                <p>
+                  2). Using "Student Login" widget, you can display login form
+                  on your website.
+                </p>
+                <p>
+                  3). Also, here you can set the URLs where you want the student
+                  to redirect after login and logout.
+                </p>
+                <img
+                  class="slogin-widget"
+                  src="images/student-login-widget.jpg"
+                  alt="Student Login Widget"
+                />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-showing-student-login-form-on-a-page">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Showing Student Login Form on a Page</h3>
+                <p>
+                  1). To display login form and student dashboard on a page or
+                  post, use shortcode: [school_management_account]
+                </p>
+                <img
+                  src="images/showing-student-login-form-on-a-page.jpg"
+                  alt="Showing Student Login Form on a Page"
+                />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-student-dashboard">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Student Dashboard</h3>
+                <p>
+                  1). Student can login from the page where the shortcode
+                  [school_management_account] is used. Here, student can find
+                  the dashboard.
+                </p>
+                <p>
+                  2). In this dashboard, student can view recent notices, print
+                  ID card, view attendance, view exam time table, admit card and
+                  study material. Also, students can pay their fees using a
+                  suitable payment method.
+                </p>
+                <img
+                  src="images/student-dashboard.jpg"
+                  alt="Student Dashboard"
+                />
+                <hr />
+                <img
+                  src="images/student-fee-invoices.jpg"
+                  alt="Student Fee Invoices"
+                />
+                <hr />
+                <img
+                  src="images/student-payment-history.jpg"
+                  alt="Student Payment History"
+                />
+                <hr />
+                <img
+                  src="images/student-study-materials.jpg"
+                  alt="Student Study Materials"
+                />
+                <hr />
+                <img
+                  src="images/student-noticeboard.jpg"
+                  alt="Student Noticeboard"
+                />
+                <hr />
+                <img
+                  src="images/student-exam-time-table.jpg"
+                  alt="Student Exams Time Table"
+                />
+                <hr />
+                <img
+                  src="images/student-admit-cards.jpg"
+                  alt="Student Admit Cards"
+                />
+                <hr />
+                <img
+                  src="images/student-attendance.jpg"
+                  alt="Student Attendance"
+                />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-showing-exam-time-table-on-a-page">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Showing Exam Time Table on a Page</h3>
+                <p>1). Go to "Exams" under "SM Examination".</p>
+                <p>
+                  2). Edit the exam and you will see a shortcode for time table
+                  which you can use in a page or post to display the time table
+                  for this exam.
+                </p>
+                <img
+                  src="images/showing-exam-time-table-on-a-page.jpg"
+                  alt="Showing Exam Time Table on a Page"
+                />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-showing-inquiry-form-on-a-page">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Showing Inquiry Form on a Page</h3>
+                <p>
+                  1). To display admission inquiry form on a page or post, use
+                  shortcode: [school_management_inquiry]
+                </p>
+                <img
+                  src="images/showing-inquiry-form-on-a-page.jpg"
+                  alt="Showing Inquiry Form on a Page"
+                />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-inquiries-management">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Inquiries Management</h3>
+                <p>1). Go to "Inquiries" under "SM School".</p>
+                <p>
+                  2). Here, you can find the school related inquiries received
+                  from inquiry form.
+                </p>
+                <p>
+                  3). You can also add a follow up date for each inquires and
+                  notes.
+                </p>
+                <img
+                  src="images/inquiries-management.jpg"
+                  alt="Inquiries Management"
+                />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-print-view">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>Print View</h3>
+                <h5>Student ID Card</h5>
+                <img
+                  src="images/print-view-student-id-card.jpg"
+                  alt="Print Student ID Card"
+                />
+                <hr />
+                <h5>Attendance Sheet</h5>
+                <img
+                  src="images/print-view-attendance-sheet.jpg"
+                  alt="Print Attendance Sheet"
+                  width="100%"
+                />
+                <hr />
+                <h5>Fee Invoice</h5>
+                <img
+                  src="images/print-view-fee-invoice.jpg"
+                  alt="Print Fee Invoice"
+                />
+                <hr />
+                <h5>Payment Receipt</h5>
+                <img
+                  src="images/print-view-payment-receipt.jpg"
+                  alt="Print Payment Receipt"
+                />
+                <hr />
+                <h5>Exam Time Table</h5>
+                <img
+                  src="images/print-view-exam-time-table.jpg"
+                  alt=">Print Exam Time Table"
+                />
+                <hr />
+                <h5>Admit Card</h5>
+                <img
+                  src="images/print-view-admit-card.jpg"
+                  alt="Print Admit Card"
+                />
+                <hr />
+                <h5>Exam Results</h5>
+                <img
+                  src="images/print-view-exam-results.jpg"
+                  alt="Print Exam Results"
+                />
+                <hr />
+                <h5>Certificate</h5>
+                <img
+                  src="images/print-view-certificate.jpg"
+                  alt="Print Certificate"
+                />
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content" id="wlsm-help-and-support">
+        <div class="container-fluid">
+          <div class="secnav mb-5"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="head-listing">
+                <h3>
+                  <span><strong>Help and Support</strong></span>
+                </h3>
+                <p>
+                  If you face any trouble OR required any assistance to set up
+                  and configure the plugin, please post your query on Support
+                  Forum. We will try our best to resolve our query on the forum.
+                </p>
+                <p>
+                  And your suggestions for more features and improvements for
+                  our plugin is really appreciated.
+                </p>
+                <p>Thanks for reading this documentation.</p>
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- page-wrapper -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
